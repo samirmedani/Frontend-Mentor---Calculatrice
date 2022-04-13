@@ -39,23 +39,25 @@ body {
     /* Position des élements */
     display: flex;
     justify-content: end;
-    margin: 10px 0;
-    padding: 25px 0;
-   
-    
-
-    /* Conteneur */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
-    background-color: hsl(224, 36%, 15%);
+    margin-right: 25px;
 
     /* Font */
     font-family: 'League Spartan', sans-serif;
     font-size: 2em;
-    color: white;
-    
- 
+    color: white; 
 }
+
+.result_conteneur {
+
+     /* Conteneur */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: hsl(224, 36%, 15%);
+    margin: 15px 0;
+    padding: 25px 0;
+
+}
+
 
 
 /* Design global de toutes les touches */

@@ -32,7 +32,7 @@ function rem1(btn){
     console.log(input);
 
     if(input == "") {
-        input = "Résultat !"
+        input = "0"
     } 
         
 

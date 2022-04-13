@@ -21,52 +21,35 @@
    
 
     <div id ="superconteneur">
-        <div id="result"><span>resultat !</span></div>
+        <div class="result_conteneur">
+            <div id="result">Empty, do something !</div>
+        </div>
         
-        <div id="conteneur">
-           
-          
-          
-          
-          
-          <div><input type="button" value='7' onclick='ShowValue(this)'/></div>
-          
-          
-          
-          
-          
+        
+        <div id="conteneur">  
+        <!-- row 1 -->
+          <div><input type="button" value='7' onclick='ShowValue(this)'/></div>       
           <div><input type="button" value='8' onclick='ShowValue(this)'/></div>
-          
           <div><input type="button" value='9' onclick='ShowValue(this)'/></div>
           <div><input class="btn-gray" type="button" value='CE' onclick='rem1(this)'/></div>
-          
-          
-          <div><input type="button" value='4' onclick='ShowValue(this)'/></div>
-          
-          <div><input type="button" value='5' onclick='ShowValue(this)'/></div>
-          
+        <!-- row 2 -->
+          <div><input type="button" value='4' onclick='ShowValue(this)'/></div>        
+          <div><input type="button" value='5' onclick='ShowValue(this)'/></div>  
           <div><input type="button" value='6' onclick='ShowValue(this)'/></div>
-          
-          
-          <div><input type="button" value='+' onclick='ShowValue(this)'/></div>
-          
+          <div><input type="button" value='+' onclick='ShowValue(this)'/></div>*
+        <!-- row 3 -->
           <div><input type="button" value='1' onclick='ShowValue(this)'/></div>
-          
           <div><input type="button" value='2' onclick='ShowValue(this)'/></div>
-        
           <div><input type="button" value='3' onclick='ShowValue(this)'/></div>
-          
           <div><input type="button" value='-' onclick='ShowValue(this)'/></div>
-          
+        <!-- row 4 -->
           <div><input type="button" value='0' onclick='ShowValue(this)'/></div>
-          
-          
           <div><input type="button" value='.' onclick='ShowValue(this)'/></div>
           <div><input type="button" value='/' onclick='ShowValue(this)'/></div>
           <div><input type="button" value='*' onclick='ShowValue(this)'/></div>
+        <!-- row 5 -->
           <div><input class="btn-gray bottom-btn" type="button" value='AC' onclick='Reset(this)'/></div>
           <div><input class="bottom-btn btn-red" type="button" value='=' onclick='quickMath(this)'/></div>
-          
         </div>
     </div>
 
