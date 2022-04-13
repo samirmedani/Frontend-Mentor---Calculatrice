@@ -4,55 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mon CSS -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <!-- font -->
+
+    <!-- Ajout des fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
 
-
+    <!-- Charge le script en parallèle et l'éxécute dès que le HTML est charger -->
     <script defer src="/js/script.js"></script>
 
-    <title>Calculatrice</title>
+    <title>Calc+</title>
 </head>
 <body>
-
-   
-
     <div id ="superconteneur">
+
+        <div class="title"><h1>calc</h1></div>
+
         <div class="result_conteneur">
             <div id="result">Empty, do something !</div>
         </div>
-        
-        
-        <div id="conteneur">  
-        <!-- row 1 -->
-          <div><input type="button" value='7' onclick='ShowValue(this)'/></div>       
-          <div><input type="button" value='8' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='9' onclick='ShowValue(this)'/></div>
-          <div><input class="btn-gray" type="button" value='CE' onclick='rem1(this)'/></div>
-        <!-- row 2 -->
-          <div><input type="button" value='4' onclick='ShowValue(this)'/></div>        
-          <div><input type="button" value='5' onclick='ShowValue(this)'/></div>  
-          <div><input type="button" value='6' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='+' onclick='ShowValue(this)'/></div>*
-        <!-- row 3 -->
-          <div><input type="button" value='1' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='2' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='3' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='-' onclick='ShowValue(this)'/></div>
-        <!-- row 4 -->
-          <div><input type="button" value='0' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='.' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='/' onclick='ShowValue(this)'/></div>
-          <div><input type="button" value='*' onclick='ShowValue(this)'/></div>
-        <!-- row 5 -->
-          <div><input class="btn-gray bottom-btn" type="button" value='AC' onclick='Reset(this)'/></div>
+        <div id="conteneur">
+          <!-- row 1 -->
+          <div><input class="white-btn" type="button" value='7' onclick='ShowValue(this)'/></div>       
+          <div><input class="white-btn" type="button" value='8' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='9' onclick='ShowValue(this)'/></div>
+          <div><input class="btn-gray" type="button" value='DEL' onclick='rem1(this)'/></div>
+          <!-- row 2 -->
+          <div><input class="white-btn" type="button" value='4' onclick='ShowValue(this)'/></div>        
+          <div><input class="white-btn" type="button" value='5' onclick='ShowValue(this)'/></div>  
+          <div><input class="white-btn" type="button" value='6' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='+' onclick='ShowValue(this)'/></div>
+          <!-- row 3 -->
+          <div><input class="white-btn" type="button" value='1' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='2' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='3' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='-' onclick='ShowValue(this)'/></div>
+          <!-- row 4 -->
+          <div><input class="white-btn" type="button" value='0' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='.' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='/' onclick='ShowValue(this)'/></div>
+          <div><input class="white-btn" type="button" value='*' onclick='ShowValue(this)'/></div>
+          <!-- row 5 -->
+          <div><input class="btn-gray bottom-btn" type="button" value='RESET' onclick='Reset(this)'/></div>
           <div><input class="bottom-btn btn-red" type="button" value='=' onclick='quickMath(this)'/></div>
         </div>
     </div>
-
-    
 </body>
 </html>
