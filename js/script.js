@@ -1,37 +1,22 @@
 let input = "";
 let specialChara = ['+', '-', '/', '%', '*', "."]
-let CharaBack = ""
 
 function ShowValue(btn) {
-    
+ 
     console.log(btn.value)
-
-    
-
-
+ 
     if(specialChara.includes(btn.value) && specialChara.includes(input.slice(-1))) {
-        console.log(btn.value + "btn value")
-        console.log(CharaBack + "CharaBack")
-
-        CharaBack = input
         return;
     }
-
     input = input += btn.value;
-
-    CharaBack = input
-
-    document.getElementById("result").innerHTML = input
-    
+    document.getElementById("result").innerHTML = input 
 }
 
 
-
-
-
-
 function quickMath() {
+
     document.getElementById("result").innerHTML = eval(input)
+    input = ""
 }
 
 function Reset() {
@@ -50,8 +35,7 @@ function rem1(btn){
         input = "Résultat !"
     } 
         
-    
-    
+
     document.getElementById("result").innerHTML = input;
     input = ""
    

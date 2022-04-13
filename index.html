@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet"> 
 
+
+    <script defer src="/js/script.js"></script>
 
     <title>Calculatrice</title>
 </head>
@@ -19,21 +25,21 @@
         
         <div id="conteneur">
            
-          <div><input type="button" value='AC' onclick='Reset(this)'/></div>
           
-          <div><input type="button" value='CE' onclick='rem1(this)'/></div>
           
-          <div><input type="button" value='%' onclick='ShowValue(this)'/></div>
           
-          <div><input type="button" value='/' onclick='ShowValue(this)'/></div>
           
           <div><input type="button" value='7' onclick='ShowValue(this)'/></div>
+          
+          
+          
+          
           
           <div><input type="button" value='8' onclick='ShowValue(this)'/></div>
           
           <div><input type="button" value='9' onclick='ShowValue(this)'/></div>
+          <div><input class="btn-gray" type="button" value='CE' onclick='rem1(this)'/></div>
           
-          <div><input type="button" value='*' onclick='ShowValue(this)'/></div>
           
           <div><input type="button" value='4' onclick='ShowValue(this)'/></div>
           
@@ -41,7 +47,8 @@
           
           <div><input type="button" value='6' onclick='ShowValue(this)'/></div>
           
-          <div><input type="button" value='-' onclick='ShowValue(this)'/></div>
+          
+          <div><input type="button" value='+' onclick='ShowValue(this)'/></div>
           
           <div><input type="button" value='1' onclick='ShowValue(this)'/></div>
           
@@ -49,17 +56,20 @@
         
           <div><input type="button" value='3' onclick='ShowValue(this)'/></div>
           
-          <div><input type="button" value='+' onclick='ShowValue(this)'/></div>
+          <div><input type="button" value='-' onclick='ShowValue(this)'/></div>
           
           <div><input type="button" value='0' onclick='ShowValue(this)'/></div>
           
-          <div><input type="button" value='.' onclick='ShowValue(this)'/></div>
           
-          <div><input type="button" value='=' onclick='quickMath(this)'/></div>
+          <div><input type="button" value='.' onclick='ShowValue(this)'/></div>
+          <div><input type="button" value='/' onclick='ShowValue(this)'/></div>
+          <div><input type="button" value='*' onclick='ShowValue(this)'/></div>
+          <div><input class="btn-gray bottom-btn" type="button" value='AC' onclick='Reset(this)'/></div>
+          <div><input class="bottom-btn btn-red" type="button" value='=' onclick='quickMath(this)'/></div>
           
         </div>
     </div>
 
-    <script src="/js/script.js"></script>
+    
 </body>
 </html>
